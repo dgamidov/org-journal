@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle org-journal",
+        "command": "org-journal:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "org-journal",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "org-journal:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
