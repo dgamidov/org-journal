@@ -1,7 +1,7 @@
 {
   "name": "org-journal",
   "main": "./lib/org-journal",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Package for organization Journal",
   "keywords": [],
   "repository": "https://github.com/dgamidov/org-journal",
