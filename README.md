@@ -26,6 +26,7 @@ Add to your local $PWD/.atom/config.cson configuration for org-journal autocompl
 - cmd-alt-n: cancel task
 - cmd-alt-f: set task on fire
 - cmd-alt-u: add Url
+- cmd-alt-h: hide text
 
 ## Examples
 
@@ -36,3 +37,24 @@ Add to your local $PWD/.atom/config.cson configuration for org-journal autocompl
 - [X] **me** Completed task
 - **me** ~~Canceled task~~
 - [ ] **user1** [Task with url](#task)
+
+
+<details>
+<summary>October</summary>
+
+**15.10.2020**
+
+- [ ] **me** Task
+- [ ] **me** 🔥Task in fire
+- [X] **me** Completed task
+- **me** ~~Canceled task~~
+- [ ] **user1** [Task with url](#task)
+
+**14.10.2020**
+
+- [ ] **me** Task
+- [ ] **me** 🔥Task in fire
+- [X] **user2** Completed task
+- **me** ~~Canceled task~~
+- [ ] **user1** [Task with url](#task)
+</details>
