@@ -6,6 +6,7 @@ Add to your local $PWD/.atom/config.cson configuration for org-journal autocompl
 "*":
   ..
   "org-journal":
+    "default_assignee": "me",
     "autocomplete":
       [
         "@name1",
