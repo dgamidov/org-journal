@@ -1,6 +1,10 @@
 # Package for organization Journal
 
-Use GitHub Markdown syntax.
+Use syntax GitHub Markdown syntax.
+
+## Required packages
+
+[Toggle Markdown Task](https://atom.io/packages/toggle-markdown-task)
 
 ## Configuration
 
