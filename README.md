@@ -12,11 +12,7 @@ Add to $PWD/.atom/config.cson:
   "org-journal":
     "autocomplete":
       [
-        "@Стас С",
-        "@Таня Ч",
-        "@Сергей Я",
-        "@Сергей Т",
-        "@Паша И",
-        "@Леша Г"
+        "@name1",
+        "@name2"
       ]
 %%
