@@ -2,8 +2,34 @@
   "context-menu": {
     "atom-text-editor": [
       {
-        "label": "Toggle org-journal",
-        "command": "org-journal:toggle"
+        "label": "Org Journal",
+        "submenu": [
+          {
+            "label": "Add date",
+            "command": "org-journal:addDate"
+          },
+          {
+            "label": "Add task",
+            "command": "org-journal:addTask"
+          },
+          {
+            "label": "Close task",
+            "command": "org-journal:closeTask"
+          },
+          {
+            "label": "Cancel task",
+            "command": "org-journal:cancelTask"
+          },
+          {
+            "label": "Set task on fire",
+            "command": "org-journal:setTaskOnFire"
+          }
+          ,
+          {
+            "label": "Add URL",
+            "command": "org-journal:addUrl"
+          }
+        ]
       }
     ]
   },
@@ -15,8 +41,28 @@
           "label": "org-journal",
           "submenu": [
             {
-              "label": "Toggle",
-              "command": "org-journal:toggle"
+              "label": "Add date",
+              "command": "org-journal:addDate"
+            },
+            {
+              "label": "Add Task",
+              "command": "org-journal:addTask"
+            },
+            {
+              "label": "Close Task",
+              "command": "org-journal:closeTask"
+            },
+            {
+              "label": "Cancel Task",
+              "command": "org-journal:cancelTask"
+            },
+            {
+              "label": "Set Task on fire",
+              "command": "org-journal:setTaskOnFire"
+            },
+            {
+              "label": "Add url",
+              "command": "org-journal:addUrl"
             }
           ]
         }

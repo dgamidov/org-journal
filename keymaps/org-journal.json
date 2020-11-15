@@ -1,5 +1,10 @@
 {
   "atom-workspace": {
-    "ctrl-alt-o": "org-journal:toggle"
+    "cmd-alt-d": "org-journal:addDate",
+    "cmd-alt-t": "org-journal:addTask",
+    "cmd-alt-c": "org-journal:closeTask",
+    "cmd-alt-n": "org-journal:cancelTask",
+    "cmd-alt-f": "org-journal:setTaskOnFire",
+    "cmd-alt-u": "org-journal:addUrl"
   }
 }
