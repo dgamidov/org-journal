@@ -5,7 +5,7 @@
   "description": "Package for organization Journal",
   "keywords": [
   ],
-  "repository": "https://github.com/atom/org-journal",
+  "repository": "https://github.com/dgamidov/org-journal",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
