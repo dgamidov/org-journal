@@ -1,12 +1,8 @@
-# org-journal package
+# Package for organization Journal
 
-A short description of your package.
+Add to your local $PWD/.atom/config.cson configuration for org-journal autocomplete:
 
-![A screenshot of your package](https://f.cloud.github.com/assets/69169/2290250/c35d867a-a017-11e3-86be-cd7c5bf3ff9b.gif)
-
-Add to $PWD/.atom/config.cson:
-
-%%
+```
 "*":
   ..
   "org-journal":
@@ -15,4 +11,4 @@ Add to $PWD/.atom/config.cson:
         "@name1",
         "@name2"
       ]
-%%
+```
