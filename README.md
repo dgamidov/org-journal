@@ -25,7 +25,7 @@ Add to your local $PWD/.atom/config.cson configuration for org-journal autocompl
 - cmd-alt-c: close task
 - cmd-alt-n: cancel task
 - cmd-alt-f: set task on fire
-- cmd-alt-u: add Url
+- cmd-alt-u: add url
 - cmd-alt-h: hide text
 
 ## Examples
