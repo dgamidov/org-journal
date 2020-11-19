@@ -1,5 +1,6 @@
 # Package for organization Journal
 
+Behavior of some features changes when you use it with selected text.
 Use syntax GitHub Markdown syntax.
 
 ## Required packages
