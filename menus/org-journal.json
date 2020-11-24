@@ -18,7 +18,7 @@
           },
           {
             "label": "Cancel task",
-            "command": "org-journal:cancelTask"
+            "command": "org-journal:crossOutTask"
           },
           {
             "label": "Set task on fire",
@@ -62,7 +62,7 @@
             },
             {
               "label": "Cancel Task",
-              "command": "org-journal:cancelTask"
+              "command": "org-journal:crossOutTask"
             },
             {
               "label": "Set Task on fire",
