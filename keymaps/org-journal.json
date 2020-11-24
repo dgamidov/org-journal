@@ -6,6 +6,7 @@
     "cmd-alt-n": "org-journal:cancelTask",
     "cmd-alt-f": "org-journal:setTaskOnFire",
     "cmd-alt-u": "org-journal:addUrl",
-    "cmd-alt-h": "org-journal:hide"
+    "cmd-alt-h": "org-journal:hide",
+    "cmd-alt-m": "org-journal:mark"
   }
 }
