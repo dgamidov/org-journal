@@ -32,6 +32,11 @@
             "label": "Hide text",
             "command": "org-journal:hide"
           }
+          ,
+          {
+            "label": "Mark text",
+            "command": "org-journal:mark"
+          }
         ]
       }
     ]
