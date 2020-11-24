@@ -127,6 +127,62 @@ describe('OrgJournal', () => {
     });
   });
 
+  describe('when the org-journal:addTaskWithDeadline event is triggered', () => {
+    it('hides and shows the modal panel', () => {
+      // Before the activation event the view is not on the DOM, and no panel
+      // has been created
+      expect(workspaceElement.querySelector('.org-journal')).not.toExist();
+
+      // This is an activation event, triggering it will cause the package to be
+      // activated.
+      atom.commands.dispatch(workspaceElement, 'org-journal:addTaskWithDeadline');
+
+      waitsForPromise(() => {
+        return activationPromise;
+      });
+
+      runs(() => {
+        expect(workspaceElement.querySelector('.org-journal')).toExist();
+
+        let orgJournalElement = workspaceElement.querySelector('.org-journal');
+        expect(orgJournalElement).toExist();
+
+        let orgJournalPanel = atom.workspace.panelForItem(orgJournalElement);
+        expect(orgJournalPanel.isVisible()).toBe(true);
+        atom.commands.dispatch(workspaceElement, 'org-journal:addTaskWithDeadline');
+        expect(orgJournalPanel.isVisible()).toBe(false);
+      });
+    });
+
+    it('hides and shows the view', () => {
+      // This test shows you an integration test testing at the view level.
+
+      // Attaching the workspaceElement to the DOM is required to allow the
+      // `toBeVisible()` matchers to work. Anything testing visibility or focus
+      // requires that the workspaceElement is on the DOM. Tests that attach the
+      // workspaceElement to the DOM are generally slower than those off DOM.
+      jasmine.attachToDOM(workspaceElement);
+
+      expect(workspaceElement.querySelector('.org-journal')).not.toExist();
+
+      // This is an activation event, triggering it causes the package to be
+      // activated.
+      atom.commands.dispatch(workspaceElement, 'org-journal:addTaskWithDeadline');
+
+      waitsForPromise(() => {
+        return activationPromise;
+      });
+
+      runs(() => {
+        // Now we can test for view visibility
+        let orgJournalElement = workspaceElement.querySelector('.org-journal');
+        expect(orgJournalElement).toBeVisible();
+        atom.commands.dispatch(workspaceElement, 'org-journal:addTaskWithDeadline');
+        expect(orgJournalElement).not.toBeVisible();
+      });
+    });
+  });
+
   describe('when the org-journal:closeTask event is triggered', () => {
     it('hides and shows the modal panel', () => {
       // Before the activation event the view is not on the DOM, and no panel
@@ -407,7 +463,7 @@ describe('OrgJournal', () => {
     });
   });
 
-  describe('when the org-journal:mark event is triggered', () => {
+  describe('when the org-journal:markYellow event is triggered', () => {
     it('hides and shows the modal panel', () => {
       // Before the activation event the view is not on the DOM, and no panel
       // has been created
@@ -415,7 +471,7 @@ describe('OrgJournal', () => {
 
       // This is an activation event, triggering it will cause the package to be
       // activated.
-      atom.commands.dispatch(workspaceElement, 'org-journal:mark');
+      atom.commands.dispatch(workspaceElement, 'org-journal:markYellow');
 
       waitsForPromise(() => {
         return activationPromise;
@@ -429,7 +485,7 @@ describe('OrgJournal', () => {
 
         let orgJournalPanel = atom.workspace.panelForItem(orgJournalElement);
         expect(orgJournalPanel.isVisible()).toBe(true);
-        atom.commands.dispatch(workspaceElement, 'org-journal:mark');
+        atom.commands.dispatch(workspaceElement, 'org-journal:markYellow');
         expect(orgJournalPanel.isVisible()).toBe(false);
       });
     });
@@ -447,7 +503,7 @@ describe('OrgJournal', () => {
 
       // This is an activation event, triggering it causes the package to be
       // activated.
-      atom.commands.dispatch(workspaceElement, 'org-journal:mark');
+      atom.commands.dispatch(workspaceElement, 'org-journal:markYellow');
 
       waitsForPromise(() => {
         return activationPromise;
@@ -457,7 +513,119 @@ describe('OrgJournal', () => {
         // Now we can test for view visibility
         let orgJournalElement = workspaceElement.querySelector('.org-journal');
         expect(orgJournalElement).toBeVisible();
-        atom.commands.dispatch(workspaceElement, 'org-journal:mark');
+        atom.commands.dispatch(workspaceElement, 'org-journal:markYellow');
+        expect(orgJournalElement).not.toBeVisible();
+      });
+    });
+  });
+
+  describe('when the org-journal:markPink event is triggered', () => {
+    it('hides and shows the modal panel', () => {
+      // Before the activation event the view is not on the DOM, and no panel
+      // has been created
+      expect(workspaceElement.querySelector('.org-journal')).not.toExist();
+
+      // This is an activation event, triggering it will cause the package to be
+      // activated.
+      atom.commands.dispatch(workspaceElement, 'org-journal:markPink');
+
+      waitsForPromise(() => {
+        return activationPromise;
+      });
+
+      runs(() => {
+        expect(workspaceElement.querySelector('.org-journal')).toExist();
+
+        let orgJournalElement = workspaceElement.querySelector('.org-journal');
+        expect(orgJournalElement).toExist();
+
+        let orgJournalPanel = atom.workspace.panelForItem(orgJournalElement);
+        expect(orgJournalPanel.isVisible()).toBe(true);
+        atom.commands.dispatch(workspaceElement, 'org-journal:markPink');
+        expect(orgJournalPanel.isVisible()).toBe(false);
+      });
+    });
+
+    it('hides and shows the view', () => {
+      // This test shows you an integration test testing at the view level.
+
+      // Attaching the workspaceElement to the DOM is required to allow the
+      // `toBeVisible()` matchers to work. Anything testing visibility or focus
+      // requires that the workspaceElement is on the DOM. Tests that attach the
+      // workspaceElement to the DOM are generally slower than those off DOM.
+      jasmine.attachToDOM(workspaceElement);
+
+      expect(workspaceElement.querySelector('.org-journal')).not.toExist();
+
+      // This is an activation event, triggering it causes the package to be
+      // activated.
+      atom.commands.dispatch(workspaceElement, 'org-journal:markPink');
+
+      waitsForPromise(() => {
+        return activationPromise;
+      });
+
+      runs(() => {
+        // Now we can test for view visibility
+        let orgJournalElement = workspaceElement.querySelector('.org-journal');
+        expect(orgJournalElement).toBeVisible();
+        atom.commands.dispatch(workspaceElement, 'org-journal:markPink');
+        expect(orgJournalElement).not.toBeVisible();
+      });
+    });
+  });
+
+  describe('when the org-journal:markGreen event is triggered', () => {
+    it('hides and shows the modal panel', () => {
+      // Before the activation event the view is not on the DOM, and no panel
+      // has been created
+      expect(workspaceElement.querySelector('.org-journal')).not.toExist();
+
+      // This is an activation event, triggering it will cause the package to be
+      // activated.
+      atom.commands.dispatch(workspaceElement, 'org-journal:markGreen');
+
+      waitsForPromise(() => {
+        return activationPromise;
+      });
+
+      runs(() => {
+        expect(workspaceElement.querySelector('.org-journal')).toExist();
+
+        let orgJournalElement = workspaceElement.querySelector('.org-journal');
+        expect(orgJournalElement).toExist();
+
+        let orgJournalPanel = atom.workspace.panelForItem(orgJournalElement);
+        expect(orgJournalPanel.isVisible()).toBe(true);
+        atom.commands.dispatch(workspaceElement, 'org-journal:markGreen');
+        expect(orgJournalPanel.isVisible()).toBe(false);
+      });
+    });
+
+    it('hides and shows the view', () => {
+      // This test shows you an integration test testing at the view level.
+
+      // Attaching the workspaceElement to the DOM is required to allow the
+      // `toBeVisible()` matchers to work. Anything testing visibility or focus
+      // requires that the workspaceElement is on the DOM. Tests that attach the
+      // workspaceElement to the DOM are generally slower than those off DOM.
+      jasmine.attachToDOM(workspaceElement);
+
+      expect(workspaceElement.querySelector('.org-journal')).not.toExist();
+
+      // This is an activation event, triggering it causes the package to be
+      // activated.
+      atom.commands.dispatch(workspaceElement, 'org-journal:markGreen');
+
+      waitsForPromise(() => {
+        return activationPromise;
+      });
+
+      runs(() => {
+        // Now we can test for view visibility
+        let orgJournalElement = workspaceElement.querySelector('.org-journal');
+        expect(orgJournalElement).toBeVisible();
+        atom.commands.dispatch(workspaceElement, 'org-journal:markGreen');
         expect(orgJournalElement).not.toBeVisible();
       });
     });

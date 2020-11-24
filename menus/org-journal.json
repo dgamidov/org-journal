@@ -13,6 +13,10 @@
             "command": "org-journal:addTask"
           },
           {
+            "label": "Add task with deadline",
+            "command": "org-journal:addTaskWithDeadline"
+          },
+          {
             "label": "Close task",
             "command": "org-journal:closeTask"
           },
@@ -33,8 +37,16 @@
             "command": "org-journal:hide"
           },
           {
-            "label": "Mark text",
-            "command": "org-journal:mark"
+            "label": "Mark text yellow",
+            "command": "org-journal:markYellow"
+          },
+          {
+            "label": "Mark text pink",
+            "command": "org-journal:markPink"
+          },
+          {
+            "label": "Mark text green",
+            "command": "org-journal:markGreen"
           },
           {
             "label": "Add note",
@@ -60,6 +72,10 @@
               "command": "org-journal:addTask"
             },
             {
+              "label": "Add task with deadline",
+              "command": "org-journal:addTaskWithDeadline"
+            },
+            {
               "label": "Close Task",
               "command": "org-journal:closeTask"
             },
@@ -80,8 +96,16 @@
               "command": "org-journal:hide"
             },
             {
-              "label": "Mark text",
-              "command": "org-journal:mark"
+              "label": "Mark text yellow",
+              "command": "org-journal:markYellow"
+            },
+            {
+              "label": "Mark text pink",
+              "command": "org-journal:markPink"
+            },
+            {
+              "label": "Mark text green",
+              "command": "org-journal:markGreen"
             },
             {
               "label": "Add note",

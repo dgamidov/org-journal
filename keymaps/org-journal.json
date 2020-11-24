@@ -1,13 +1,16 @@
 {
   "atom-workspace": {
     "cmd-alt-d": "org-journal:addDate",
-    "cmd-alt-t": "org-journal:addTask",
-    "cmd-alt-c": "org-journal:closeTask",
-    "cmd-alt-o": "org-journal:crossOutTask",
-    "cmd-alt-f": "org-journal:setTaskOnFire",
+    "cmd-alt-t a": "org-journal:addTask",
+    "cmd-alt-t d": "org-journal:addTaskWithDeadline",
+    "cmd-alt-t c": "org-journal:closeTask",
+    "cmd-alt-t o": "org-journal:crossOutTask",
+    "cmd-alt-t f": "org-journal:setTaskOnFire",
     "cmd-alt-u": "org-journal:addUrl",
     "cmd-alt-h": "org-journal:hide",
-    "cmd-alt-m": "org-journal:mark",
-    "cmd-alt-n": "org-journal:addNote"
+    "cmd-alt-m y": "org-journal:markYellow",
+    "cmd-alt-m p": "org-journal:markPink",
+    "cmd-alt-m g": "org-journal:markGreen",
+    "cmd-alt-n a": "org-journal:addNote"
   }
 }
