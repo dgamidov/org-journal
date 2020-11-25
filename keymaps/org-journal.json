@@ -9,7 +9,7 @@
     "cmd-alt-u": "org-journal:addUrl",
     "cmd-alt-h": "org-journal:hide",
     "cmd-alt-m y": "org-journal:markYellow",
-    "cmd-alt-m p": "org-journal:markPink",
+    "cmd-alt-m r": "org-journal:markRed",
     "cmd-alt-m g": "org-journal:markGreen",
     "cmd-alt-n a": "org-journal:addNote"
   }

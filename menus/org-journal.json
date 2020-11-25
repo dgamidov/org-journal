@@ -42,7 +42,7 @@
           },
           {
             "label": "Mark text pink",
-            "command": "org-journal:markPink"
+            "command": "org-journal:markRed"
           },
           {
             "label": "Mark text green",
@@ -101,7 +101,7 @@
             },
             {
               "label": "Mark text pink",
-              "command": "org-journal:markPink"
+              "command": "org-journal:markRed"
             },
             {
               "label": "Mark text green",

@@ -519,7 +519,7 @@ describe('OrgJournal', () => {
     });
   });
 
-  describe('when the org-journal:markPink event is triggered', () => {
+  describe('when the org-journal:markRed event is triggered', () => {
     it('hides and shows the modal panel', () => {
       // Before the activation event the view is not on the DOM, and no panel
       // has been created
@@ -527,7 +527,7 @@ describe('OrgJournal', () => {
 
       // This is an activation event, triggering it will cause the package to be
       // activated.
-      atom.commands.dispatch(workspaceElement, 'org-journal:markPink');
+      atom.commands.dispatch(workspaceElement, 'org-journal:markRed');
 
       waitsForPromise(() => {
         return activationPromise;
@@ -541,7 +541,7 @@ describe('OrgJournal', () => {
 
         let orgJournalPanel = atom.workspace.panelForItem(orgJournalElement);
         expect(orgJournalPanel.isVisible()).toBe(true);
-        atom.commands.dispatch(workspaceElement, 'org-journal:markPink');
+        atom.commands.dispatch(workspaceElement, 'org-journal:markRed');
         expect(orgJournalPanel.isVisible()).toBe(false);
       });
     });
@@ -559,7 +559,7 @@ describe('OrgJournal', () => {
 
       // This is an activation event, triggering it causes the package to be
       // activated.
-      atom.commands.dispatch(workspaceElement, 'org-journal:markPink');
+      atom.commands.dispatch(workspaceElement, 'org-journal:markRed');
 
       waitsForPromise(() => {
         return activationPromise;
@@ -569,7 +569,7 @@ describe('OrgJournal', () => {
         // Now we can test for view visibility
         let orgJournalElement = workspaceElement.querySelector('.org-journal');
         expect(orgJournalElement).toBeVisible();
-        atom.commands.dispatch(workspaceElement, 'org-journal:markPink');
+        atom.commands.dispatch(workspaceElement, 'org-journal:markRed');
         expect(orgJournalElement).not.toBeVisible();
       });
     });
