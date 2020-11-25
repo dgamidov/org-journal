@@ -41,7 +41,7 @@
             "command": "org-journal:markYellow"
           },
           {
-            "label": "Mark text pink",
+            "label": "Mark text red",
             "command": "org-journal:markRed"
           },
           {
@@ -100,7 +100,7 @@
               "command": "org-journal:markYellow"
             },
             {
-              "label": "Mark text pink",
+              "label": "Mark text red",
               "command": "org-journal:markRed"
             },
             {
