@@ -23,7 +23,7 @@ Add to your local $PWD/.atom/config.cson configuration for org-journal autocompl
       ]
     assignee_prefix: "resp. "
     deadline_prefix: "until "
-```
+
 
 ## Hot keys
 
@@ -39,34 +39,3 @@ Add to your local $PWD/.atom/config.cson configuration for org-journal autocompl
 "cmd-alt-m p" - mark pink
 "cmd-alt-m g" - mark green
 "cmd-alt-n a" - add note
-
-## Examples
-
-**15.11.2020**
-
-- [ ] **me** Task
-- [ ] **me** 🔥Task in fire
-- [X] **me** Completed task
-- **me** ~~Canceled task~~
-- [ ] **user1** [Task with url](#task)
-
-
-<details>
-<summary>October</summary>
-
-**15.10.2020**
-
-- [ ] **me** Task
-- [ ] **me** 🔥Task in fire
-- [X] **me** Completed task
-- **me** ~~Canceled task~~
-- [ ] **user1** [Task with url](#task)
-
-**14.10.2020**
-
-- [ ] **me** Task
-- [ ] **me** 🔥Task in fire
-- [X] **user2** Completed task
-- **me** ~~Canceled task~~
-- [ ] **user1** [Task with url](#task)
-</details>

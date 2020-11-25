@@ -51,6 +51,10 @@
           {
             "label": "Add note",
             "command": "org-journal:addNote"
+          },
+          {
+            "label": "Add example",
+            "command": "org-journal:addExample"
           }
         ]
       }
@@ -110,6 +114,10 @@
             {
               "label": "Add note",
               "command": "org-journal:addNote"
+            },
+            {
+              "label": "Add example",
+              "command": "org-journal:addExample"
             }
           ]
         }
